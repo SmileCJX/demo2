@@ -6,12 +6,15 @@
   <!--<app-order [stockCode]="stock" [amount]="100"></app-order>-->
 <!--</div>-->
 
-<app-price-quote (lastPrice)="priceQuoteHandler($event)"></app-price-quote>
-<div>
-  这是在报价组件外部，
-  <div></div>
-  股票代码是{{priceQuote.stockCode}}，
-  股票价格是{{priceQuote.lastPrice | number : '2.2-2'}}
-</div>
+<!--<app-price-quote (lastPrice)="priceQuoteHandler($event)"></app-price-quote>-->
+<!--<div>-->
+  <!--这是在报价组件外部，-->
+  <!--<div></div>-->
+  <!--股票代码是{{priceQuote.stockCode}}，-->
+  <!--股票价格是{{priceQuote.lastPrice | number : '2.2-2'}}-->
+<!--</div>-->
+
+<app-price-quote (buy)="buyQuoteHandler($event)"></app-price-quote>
+<app-order [priceQuote]="priceQuote"></app-order>
 
 
