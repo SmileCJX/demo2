@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { OrderComponent } from './order/order.component';
 import {FormsModule} from "@angular/forms";
-import { PriceQuoteComponent } from './price-quote/price-quote.component';
+import {PriceQuoteComponent} from './price-quote/price-quote.component';
 
 @NgModule({
   declarations: [
@@ -19,4 +19,6 @@ import { PriceQuoteComponent } from './price-quote/price-quote.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
